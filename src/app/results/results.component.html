@@ -1,0 +1,83 @@
+  <div class="container">
+    <canvas id="myChart" class="bigCanvas" width="100%"></canvas>
+<!-- 
+    <table>
+      <tr>
+        <td>
+          <canvas id="chart1" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[0] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart2" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[1] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart3" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[2] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart4" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[3] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart5" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[4] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart6" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[5] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart7" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[6] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart8" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[7] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart9" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[8] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart10" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[9] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart11" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[10] }}</td>
+      </tr>
+      <tr>
+        <td>
+          <canvas id="chart12" class="smallCanvas"></canvas>
+        </td>
+        <td class="question">{{ app.about[11] }}</td>
+      </tr>
+    </table> -->
+    <h2>{{ this.app.resultsHeader }}</h2>
+    <div class="results" id="results"></div>
+    <h2 class="last">{{ this.app.resultsFooter }}</h2>
+    <button class="continue-btn btn btn-lg" type="button" (click)="app.navigate('info')">{{ app.continueBtn }}</button>
+    <script src="node_modules/chart.js/src/chart.js"></script>
+  </div>

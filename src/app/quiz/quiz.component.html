@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    
+<!--     <p class="topicListItemLast">{{ app.ageQuestion }}</p>
+    <ng5-slider class="ageSlider" [(value)]="value[11]" [options]="optionsAge"></ng5-slider> -->
+
+    <!-- <label for="q1" (click)="playAudio1()">
+      <fa-icon [icon]="faVolumeUp"></fa-icon>{{ app.question1 }}
+    </label>
+    <textarea id="q1" formControlName="q1" max="" type="text" class="form-control" placeholder="{{ app.answer1 }}"
+      rows="3"></textarea> -->
+
+    <label for="q2" (click)="playAudio2()">
+      <fa-icon [icon]="faVolumeUp"></fa-icon>{{ app.question2 }}
+    </label>
+    <textarea id="q2" formControlName="q2" type="text" class="form-control" placeholder="{{ app.answer2 }}" rows="5"></textarea>
+
+    <label for="q3" (click)="playAudio3()">
+      <fa-icon [icon]="faVolumeUp"></fa-icon>{{ app.question3 }}
+    </label>
+    <textarea id="q3" formControlName="q3" type="text" class="form-control" placeholder="{{ app.answer3 }}" rows="5"></textarea>
+
+    <label for="q4" (click)="playAudio4()">
+      <fa-icon [icon]="faVolumeUp"></fa-icon>{{ app.question4 }}
+    </label>
+    <textarea id="q4" formControlName="q4" type="text" class="form-control" placeholder="{{ app.answer4 }}" rows="5"></textarea>
+
+    <button class="btn-send btn btn-lg" type="submit">{{ app.sendBtn }}</button>
+  </form>
+</div>

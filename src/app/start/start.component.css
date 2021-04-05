@@ -1,0 +1,37 @@
+p {
+    margin-bottom: 4em;
+    font-size: 1.2rem;
+}
+h1 {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.container {
+    text-align: center;
+    padding: 2em;
+    background-image: url(../../assets/koelngrau4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.continue-btn {
+    background-color: #C5E1A5;
+    color: #ffffff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    width: 94%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin: 3%;
+  }
+  
+.continue-btn:hover {
+background-color: #DCEDC8;
+}
+
+.continue-btn:active {
+background-color: #DCEDC8;
+}
+

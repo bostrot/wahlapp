@@ -1,0 +1,51 @@
+  
+label {
+    font-family: 'Ubuntu', sans-serif !important;
+    line-height: normal;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    color: #757575;
+}
+
+fa-icon {
+    margin-right: .5em;
+    color: #757575;
+    opacity: .7;
+    font-size: 1.2rem;
+}
+.container {
+    padding: 2em;
+    max-width: 80em;
+}
+
+.container>form>textarea {
+    margin-bottom: 2em;
+    border-radius: 0.7em;
+    border-color: #E0E0E0;
+    resize: none;
+}
+
+.container>form>textarea::placeholder {
+    color: #9E9E9E;
+}
+
+.btn-send {
+    background-color: #C5E1A5;
+    color: #ffffff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    width: 94%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin: 3%;
+}
+
+.btn-send:hover {
+    background-color: #DCEDC8;
+}
+
+.btn-send:active {
+    background-color: #DCEDC8;
+}

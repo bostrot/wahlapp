@@ -1,0 +1,27 @@
+image: node:12.18.3
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - deploy
+  
+pages:
+  cache:
+    paths:
+    - node_modules/
+
+  stage: deploy
+  script:
+  - npm install -g @angular/cli@10.0.5
+  - npm install
+  - ng build --prod
+  - cp dist/ob2020/index.html dist/ob2020/404.html
+  - mv dist/ob2020/ public/
+  - gzip -k -6 -r public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  - pages
