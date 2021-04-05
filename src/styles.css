@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif !important;
+  color: #5d7286;
+  height: 100%; 
+}
+
+.ng5-slider .ng5-slider-pointer .ng5-slider-pointer-min {
+  z-index: 10 !important;
+}
+
+.ng5-slider .ng5-slider-selection {
+  background: rgb(0, 0, 0) !important;
+}
+
+.ng5-slider-tick-legend {
+  color: grey !important;
+}
+
+.ng5-slider .ng5-slider-pointer .ng-slider:after {
+  background-color: #C5E1A5 !important;
+}
+
+.ng5-slider .ng5-slider-pointer .ng-slider-active:after {
+  background-color: #C5E1A5 !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #ffffff !important;
+}
+
+.mat-option-text {
+  opacity: .8;
+}

@@ -1,0 +1,66 @@
+body {
+  margin: 0 !important;
+}
+
+.bigCanvas {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.smallCanvas {
+  width: 8em !important;
+}
+
+table>tr>td {
+  padding-bottom: 2em;
+}
+
+.question {
+  padding-right: 3em;
+}
+
+.continue-btn {
+  background-color: #C5E1A5;
+  color: #ffffff;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  width: 94%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  margin: 3%;
+}
+
+.continue-btn:hover {
+  background-color: #DCEDC8;
+}
+
+.continue-btn:active {
+  background-color: #DCEDC8;
+}
+
+
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.my-chart {
+  display: block;
+  width: 533px;
+  height: 266px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.last {
+  margin-bottom: 6em !important;
+}
+
+.container {
+  padding-bottom: 1em;
+}

@@ -1,0 +1,41 @@
+<!-- <a href="https://youtu.be/jUurezTksGc" target="_blank"><img width="100%" src="../../assets/video_placeholder.png" /></a> -->
+<div class="container">
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <p class="header">{{ app.aboutHeader }}</p>
+  <p class="subheader">{{ app.aboutSubheader }}</p>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{ app.genderQuestion }}</mat-label>
+    <mat-select [(value)]="genderValue">
+      <mat-option *ngFor="let gender of genders" [value]="gender.value">
+        {{gender.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="marginBot" appearance="fill">
+    <mat-label>{{ app.ageQuestion }}</mat-label>
+    <mat-select [(value)]="ageValue">
+      <mat-option *ngFor="let age of ages" [value]="age.value">
+        {{age.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!-- <img src="/assets/profilbild.jpg" width="150em"/> -->
+  <p>{{ app.topicMostImportant }}</p>
+  <div cdkDropList class="topic-list" (cdkDropListDropped)="drop($event)">
+    <div class="topic-box" *ngFor="let topic of app.about" cdkDrag>{{topic}}
+
+      <div class="topic-handle" cdkDragHandle>
+        <fa-icon [icon]="faGripLines" size="2x"></fa-icon>
+      </div>
+
+    </div>
+  </div>
+  <p>{{ app.topicLeastImportant }}</p>
+  <p class="subheader">{{ app.disclaimer }}</p>
+  <!-- <p class="description">{{ app.videodesc }}</p> -->
+  <p class="info">{{ app.videotags }}</p>
+  <button class="continue-btn btn btn-lg" type="submit">{{ app.agreeBtn }}</button>
+</form>
+</div>
